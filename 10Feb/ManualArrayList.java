@@ -13,7 +13,27 @@ public class MannualArrayList {
         }
         data[size++] = value;
     }
-
+    public void search(int value) {
+        for (int i = 0; i < size; i++) {
+            if (data[i] == value) {
+                System.out.println("Element found at index: " + i);
+                return;
+            }
+        }
+        System.out.println("Element not found.");
+    }
+    public int bubbleSort() {
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                if (data[j] > data[j + 1]) {
+                    int temp = data[j];
+                    data[j] = data[j + 1];
+                    data[j + 1] = temp;
+                }
+            }
+        }
+        return 0;
+    }
     private void resize() {
         int[] newData = new int[data.length * 2];
 
@@ -37,7 +57,7 @@ public static void main(String[] args) {
         list.add(30);
         list.add(40);
         list.add(50);
-
+        list.search(30);
         list.print();
     }
 }
