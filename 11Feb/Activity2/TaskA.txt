@@ -1,0 +1,11 @@
+1. How is stack used in function calls (Call Stack)?
+A stack stores function call details in stack frames and follows LIFO so the last called function returns first.
+
+2. How is stack used in Undo/Redo operations?
+Undo/Redo uses two stacks where the most recent action is pushed and popped to reverse or restore actions using LIFO.
+
+3. Why is stack useful in expression evaluation?
+Stack helps evaluate expressions by temporarily storing operands and applying operators in correct order.
+
+4. Differentiate between Infix, Prefix, and Postfix expressions.
+Infix places the operator between operands, Prefix before operands, and Postfix after operands
