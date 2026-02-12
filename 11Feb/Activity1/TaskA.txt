@@ -1,0 +1,18 @@
+1. Define Stack and explain LIFO principle.
+A Stack is a linear data structure that follows the LIFO (Last In First Out) principle.
+This means the element that is inserted last is removed first.
+
+
+2. What is Stack Overflow and Stack Underflow?
+Overflow - when we try to push the element into a full stack
+Underflow - when we try to pop the element from an empty stack
+
+
+3. Write real-life examples of Stack.
+Pile of Books
+
+
+4. What is the time complexity of Push and Pop operations?
+Push Operation → O(1)
+Pop Operation → O(1)
+Peek Operation → O(1)
