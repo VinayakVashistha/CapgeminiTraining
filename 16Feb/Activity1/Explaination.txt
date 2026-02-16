@@ -1,0 +1,86 @@
+Binary Search Tree (BST)
+ Insert
+
+Start from the root and compare the value.
+
+If smaller, move to the left; if larger, move to the right.
+
+Continue until a null position is found and insert the node there.
+
+The structure of the tree depends on insertion order.
+
+
+Search
+
+Begin at the root and compare with the target value.
+
+Move left if the value is smaller, right if it is larger.
+
+Repeat until the value is found or the node becomes null.
+
+
+
+Traversal
+
+Traversal means visiting all nodes of the tree.
+
+Inorder (Left-Root-Right) gives elements in sorted order.
+
+Preorder and Postorder are used for different processing needs.
+
+
+
+Time Complexity of BST
+
+Insert takes O(log n) on average if the tree is balanced.
+
+Insert takes O(n) in the worst case if the tree becomes skewed.
+
+Search takes O(log n) on average and O(n) in the worst case.
+
+Traversal always takes O(n) because every node is visited once.
+
+
+
+Heap (Min Heap / Max Heap)
+Insert
+
+Insert the element at the last position to maintain complete tree property.
+
+Compare it with its parent and swap if the heap property is violated.
+
+Continue this process upward (heapify up).
+
+
+
+Search
+
+Heap does not maintain sorted structure like BST.
+
+To find a specific element, we may need to check all elements.
+
+Therefore, searching is not efficient in a heap.
+
+
+
+Traversal
+
+Heap is stored in an array form.
+
+Traversal simply means iterating through the array.
+
+It does not give sorted order of elements.
+
+
+
+Time Complexity of Heap
+
+Insert takes O(log n) because we may move up the height of the tree.
+
+Extract Min/Max takes O(log n) due to heapify down.
+
+Peek takes O(1) since the root is directly accessible.
+
+Search takes O(n) because elements are not ordered for searching.
+
+Traversal takes O(n) since every element is visited once.
